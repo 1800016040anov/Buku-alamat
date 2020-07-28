@@ -1,0 +1,38 @@
+<h3 mat-dialog-title>add new guest</h3>
+<div mat-dialog-content>
+    <mat-form-field style="width: 100%;">
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="data.Nama">
+    </mat-form-field>
+    <mat-form-field style="width: 100%;">
+        <mat-label>Address</mat-label>
+        <input matInput [(ngModel)]="data.Alamat">
+    </mat-form-field>
+    <mat-form-field style="width: 100%;">
+        <mat-label>city</mat-label>
+        <input matInput [(ngModel)]="data.Kota">
+    </mat-form-field>
+    <mat-form-field style="width: 100%;">
+        <mat-label>Propinsi</mat-label>
+        <input matInput [(ngModel)]="data.Propinsi">
+    </mat-form-field>
+    <mat-form-field style="width: 100%;">
+        <mat-label>Pos Code</mat-label>
+        <input matInput [(ngModel)]="data.KodePos">
+    </mat-form-field>
+    <mat-form-field style="width: 100%;">
+        <mat-label>Phone Number</mat-label>
+        <input matInput [(ngModel)]="data.Nomer">
+    </mat-form-field>
+    <mat-form-field style="width: 100%;">
+        <mat-label>Email</mat-label>
+        <input matInput [(ngModel)]="data.Email">
+    </mat-form-field>
+</div>
+
+console.log('data:', data.Nama);
+<mat-dialog-actions>
+    <span class="spacer"></span>
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-raised-button color="primary" (click)="simpan(data)">Save</button>
+</mat-dialog-actions>

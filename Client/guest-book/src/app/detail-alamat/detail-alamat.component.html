@@ -1,0 +1,27 @@
+<h3 mat-dialog-title>{{data.Nama}}</h3>
+<div mat-dialog-content>
+    <mat-list>
+        <h3 matSubheader>{{data.Alamat}}</h3>
+        <mat-list-item>
+            <mat-icon matListIcon>call</mat-icon>
+            <h3 mat-line>{{data.Nomer}}</h3>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+        <mat-list-item>
+            <mat-icon matListIcon>mail</mat-icon>
+            <h3 mat-line>{{data.Email}}</h3>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+        <mat-list-item>
+            <mat-icon matListIcon>place</mat-icon>
+            <h3 mat-line>{{data.Alamat}}</h3>
+            <p mat-line>{{data.Kota}}</p>
+            <p mat-line>{{data.Propinsi}}</p>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+    </mat-list>
+</div>
+<mat-dialog-actions>
+    <span class="spacer"></span>
+    <button mat-button mat-dialog-close>Tutup</button>
+</mat-dialog-actions>
